@@ -33,10 +33,14 @@ parses('$foo["baz"]');
 parses('(stat $file)[2]');
 parses('$foo{1}');
 parses('$foo{1, 2}');
+parses('$foo{bar}');
+parses('$foo{barBaz}');
+parses('$foo{1, 2}');
 parses('$foo{qw/foo bar/}');
 parses("(stat)[2]");
 
 parsent("5[1]");
 parsent('$x->y[1]');
+parsent('$foo{bar-Baz}');
 
 done_testing;

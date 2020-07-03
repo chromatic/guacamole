@@ -509,6 +509,7 @@ BlockNonEmpty ::= LBrace StatementSeq RBrace  name => Block
 ArrayElem ::= LBracket Expression RBracket
 
 HashElem ::= LBrace Expression RBrace
+           | LBrace VarIdentExpr RBrace
 
 NonBraceLiteral ::= LitNumber
                   | LitArray
